@@ -1,0 +1,39 @@
+# .gitignore
+# ------------------------------------------------------------------
+# WHY THIS FILE EXISTS:
+#   Git tracks every file in your folder unless you tell it not to.
+#   Some files should NEVER be uploaded to GitHub:
+#     - Large raw datasets (better shared via a download link)
+#     - Auto-generated cache files (Python bytecode, checkpoints)
+#     - Virtual environment folders (huge, and machine-specific)
+#     - OS-specific junk files (like macOS .DS_Store)
+#   Listing them here keeps your repo small, clean, and professional.
+# ------------------------------------------------------------------
+
+# Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment folders
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Large raw dataset (we keep a small sample + download instructions instead)
+dataset/raw/*.csv
+!dataset/raw/.gitkeep
+
+# Trained model binary (optional: comment this out if you WANT to upload it)
+# models/*.pkl
+
+# Editor/IDE settings
+.vscode/
+.idea/
